@@ -6,6 +6,7 @@ third = readFileSync('./content/subfolder/subsubfolder/test2.txt');
 
 console.log(first,second,third);
 
+console.log('start this task');
 // Read As data 
 first = readFileSync('./content/test.txt','utf8');
 second = readFileSync('./content/subfolder/test1.txt','utf8');
@@ -18,3 +19,7 @@ writeFileSync('./result-sync.txt',
 `Here is the result : ${first}, ${second}, ${third}`,
 {flag:'a'} //append data in the current file
 )
+
+console.log('done with this task');
+
+console.log('new task intialize');

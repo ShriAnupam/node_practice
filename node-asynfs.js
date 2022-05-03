@@ -1,5 +1,6 @@
 const {readFile, writeFile } = require('fs');
-// Read As Chunk data 
+// Read As data
+console.log('start this task');
 readFile('./content/test.txt','utf8',(err,result)=>{
     if(err){
         console.log(err);
@@ -19,11 +20,11 @@ readFile('./content/test.txt','utf8',(err,result)=>{
                 if(err){
                     console.log(err);
                 }
-                console.log(result);       
+                // console.log(result);
+                console.log('done with this task');       
             }
         )
     });
 });
 
-
-// this function only create file on the same directory the function file present not in directories
+console.log('start new task here');
